@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="market"/>
+  <qresource prefix="tipdialog">
+    <file>image/tipdialog/cd.png</file>
+    <file>image/tipdialog/cancel.png</file>
+    <file>image/tipdialog/cancel_a.png</file>
+    <file>image/tipdialog/no.png</file>
+    <file>image/tipdialog/no_a.png</file>
+    <file>image/tipdialog/no1.png</file>
+    <file>image/tipdialog/no2.png</file>
+    <file>image/tipdialog/yes_a.png</file>
+    <file>image/tipdialog/yes1.png</file>
+  </qresource>
+  <qresource prefix="image">
+    <file>image/Logo.jpg</file>
+  </qresource>
+</RCC>

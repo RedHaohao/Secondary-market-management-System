@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tipdialog</class>
+ <widget class="QWidget" name="tipdialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>334</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>tipdialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frame { 
+	border-image: url(:/tipdialog/image/tipdialog/cd.png);
+	}
+#frame * { 
+border-image:url(); 
+}
+</string>
+  </property>
+  <widget class="QLabel" name="textlable">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>55</y>
+     <width>244</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>382</width>
+     <height>214</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="CloseButton">
+    <property name="geometry">
+     <rect>
+      <x>302</x>
+      <y>14</y>
+      <width>15</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-image: url(:/tipdialog/image/tipdialog/no2.png);
+}
+QPushButton:hover{
+	border-image: url(:/tipdialog/image/tipdialog/no1.png);
+}
+
+/*QPushButton:pressed{
+	border-image: url(:/通道选择/images/停止检测对话框/btn_close_down.png);
+}*/
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OKButton">
+    <property name="geometry">
+     <rect>
+      <x>54</x>
+      <y>149</y>
+      <width>78</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	border-image: url(:/tipdialog/image/tipdialog/yes_a.png);
+}
+
+QPushButton:hover{
+   
+	border-image: url(:/tipdialog/image/tipdialog/yes1.png);
+}
+
+/*QPushButton:pressed{
+	border-image: url(:/通道选择/images/停止检测对话框/btn_sure_down.png);
+}*/
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titilelabel">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>13</y>
+      <width>84</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font:bold;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CancelButton">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>149</y>
+      <width>78</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	
+	border-image: url(:/tipdialog/image/tipdialog/cancel_a.png);
+}
+
+QPushButton:hover{
+   
+	border-image: url(:/tipdialog/image/tipdialog/cancel.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>textlable</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>OKButton</tabstop>
+  <tabstop>CancelButton</tabstop>
+  <tabstop>CloseButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="market.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>closeDialog()</slot>
+ </slots>
+</ui>
